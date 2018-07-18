@@ -191,7 +191,7 @@ contract Fisticuffs {
         victorianGentlemen[gentlemanID].position = newPosition;
     }
 
-    function punch(uint8 punchingGentlemenID, uint8 targetedGentlemanID) {
+    function commandPunch(uint8 punchingGentlemenID, uint8 targetedGentlemanID) {
         deductEnergyOrRevert(punchingGentlemenID, 30);
 
         uint8 tileX = victorianGentlemen[punchingGentlemenID].position[0];
